@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 
 import prisma from '@/libs/prismadb'
 import getUser from '@/app/actions/getUser'
+
 import { Reservation } from '@prisma/client'
 
 export const POST = async (req: Request) => {

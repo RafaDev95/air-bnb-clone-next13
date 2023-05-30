@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: darkgrey;
+  outline: none;
+}
+
+.categories-nav-button {
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  padding: 0.25rem;
+  border-width: 2px;
+}
+
+.categories-nav-button:active {
+  transform: scale(0.95);
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.flexcol-wrapper-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows {
+  -moz-appearance: textfield;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  font-size: 16px !important;
+  width: 100% !important;
+}
